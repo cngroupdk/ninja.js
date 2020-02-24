@@ -15,11 +15,22 @@
     "sourceType": "module"
   },
   "plugins": [
-    "react"
+    "react",
+    "import"
   ],
   "rules": {
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
+    "import/no-extraneous-dependencies": "warn",
+    "import/order": [
+      "warn",
+      {
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ],
     "indent": [
       "error",
       2
